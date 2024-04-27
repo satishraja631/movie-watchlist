@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AppProvider from './AppContext'
 
-function App() {
+import './Styles/Home.css'
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import Watchlist from './Styles/Watchlist';
+import Home from './Components/Home';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
+
+import Sidebar from './Components/Sidebar';
+
+
+const App = () => {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <Router>
+      <div className="home-page">
+        <div className='sidebar'>
+          <Sidebar/>
+        </div>
+        <div className='main-content'>
+          
+            
+          <Routes>
+             <Route index element={<Home/>}></Route>
+             <Route path='/watchlist' element={<Watchlist/>}></Route>
+             <Route path='/login' element={<Login/>}></Route>
+             <Route path='/signup' element={<Signup/>}/>
+           </Routes>
+          
+                  
+         </div>
+        
+        
+      </div>
+      </Router>
+      
+    </AppProvider>
   );
-}
+};
 
 export default App;

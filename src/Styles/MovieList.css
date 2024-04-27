@@ -1,0 +1,113 @@
+.movie-list-container{
+        width: 70vw;
+        margin: 5%;
+        padding: 10px;
+        white-space: nowrap;
+        
+        margin-top: 1rem;
+}
+.movie-list{
+        display: flex;
+        flex-direction:row;
+        padding: 0.5rem;
+        
+        overflow-x:auto;
+        
+        
+}
+
+.movie-card {
+
+    margin-right: 25px;
+    
+    margin-bottom: 1rem;
+   
+    width: 150px;
+    height: 300px;
+    
+    border: 1px solid #ddd;
+   
+    border-radius: 4px;
+   
+    position: relative;
+
+}
+.movie-card>img {
+    width: 100%;
+    height: 70%;
+
+
+}
+.bookmark-button {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 1;
+
+}
+ .title {   
+            
+            white-space: break-spaces;
+                word-break: break-all;
+            margin: 0;
+           
+            font-size: 0.8rem;
+            
+            line-height: 1.2;
+            
+           
+           
+                
+    
+        }
+
+ul{
+    list-style-type:none;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+@media screen and (max-width:700px){
+    .movie-list-container {
+            width: 70vw;
+            margin: 100px;
+            padding: 10px;
+            white-space: nowrap;
+    
+            margin-top: 1rem;
+        }
+    .movie-list {
+            display: flex;
+            flex-wrap:wrap;
+            width:100%;
+            padding: auto;
+    
+            overflow: hidden;
+    
+    
+        }
+        .movie-card {
+    
+            margin-right: 25px;
+    
+            margin-bottom: 1rem;
+    
+            width: 100px;
+            height: 300px;
+    
+            border: 1px solid #ddd;
+    
+            border-radius: 4px;
+    
+            position: relative;
+    
+        }
+        .watchlist-login-form{
+            display:flex;
+            justify-content: center;
+            
+            
+        }
+}
