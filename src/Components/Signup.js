@@ -26,7 +26,7 @@ const Signup = () => {
 
    const existingUser = users.find((user) => user === email);
    if (existingUser) {
-    setErrorMessage('Email address already exists. Please choose a different email.');
+    setErrorMessage('Email address already exists. Please proceed to Login');
     return; // Prevent further processing
   }
    const newUser = email;

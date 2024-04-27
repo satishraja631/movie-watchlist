@@ -21,7 +21,7 @@ const Login = () => {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    const existingUsersString = localStorage.getItem('users'); // Replace 'users' with your key
+    const existingUsersString = localStorage.getItem('users'); 
      let users = [];
      if (existingUsersString) {
        try {
@@ -43,7 +43,7 @@ const Login = () => {
       setErrorMessage('Login successful!'); // Optional success message
       
     } else {
-      setErrorMessage('Invalid email or password (no password implemented here).');
+      setErrorMessage('Please Signup if you are a new user.');
     }
   };
 

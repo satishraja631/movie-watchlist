@@ -24,7 +24,7 @@ function Search() {
   };
 
   return (
-    <div>
+    <div className='search-bar-container'> 
     <form   className='search-bar' onSubmit={handleSubmit}>
       <input
         type="text"

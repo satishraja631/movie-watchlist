@@ -83,6 +83,7 @@ p {
             flex-wrap:wrap;
             width:100%;
             padding: auto;
+            margin:0 auto;
     
             overflow: hidden;
     
@@ -94,7 +95,7 @@ p {
     
             margin-bottom: 1rem;
     
-            width: 100px;
+            width: 150px;
             height: 300px;
     
             border: 1px solid #ddd;
