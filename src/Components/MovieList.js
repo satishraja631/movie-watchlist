@@ -23,7 +23,7 @@ function MovieList() {
     
 
 
-// If stored as JSON (recommended)
+
 if (watchlistString) {
   const watchlist = JSON.parse(watchlistString);
   console.log(watchlist);

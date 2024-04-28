@@ -1,10 +1,10 @@
 import React, { useEffect} from 'react'
 import { useContext } from 'react'
 import { AppContext } from '../AppContext'
-import './MovieList.css'
-import Login from '../Components/Login';
+import '../Styles/MovieList.css'
+import Login from './Login';
 
-import './Login.css'
+import '../Styles/Login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark} from '@fortawesome/free-solid-svg-icons';
 
@@ -15,7 +15,7 @@ function Watchlist() {
 
  
   useEffect(() => {
-    // Update watchlist state from localStorage on component mount or loggedInUser change
+    
     if (isLoggedIn) {
       const watchlistString = localStorage.getItem('watchlist');
       try {

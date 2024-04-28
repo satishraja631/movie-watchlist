@@ -3,7 +3,7 @@ import AppProvider from './AppContext'
 
 import './Styles/Home.css'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import Watchlist from './Styles/Watchlist';
+import Watchlist from './Components/Watchlist';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Signup from './Components/Signup';

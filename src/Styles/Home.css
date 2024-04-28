@@ -18,7 +18,7 @@
     max-width: 100%;
     display:flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
 
@@ -68,11 +68,13 @@
     }
 
     .sidebar {
-        display: inline-block;
+        display: flex;
         width: 100vw;
         height: 20%;
         padding: 0;
         border-bottom: 1px solid black;
+        justify-content: center;
+        align-items:center;
     }
 
     .main-content {
@@ -123,10 +125,7 @@
 
 
 
-    .sidebar h1 {
-        color: orangered;
-        margin: 10px;
-    }
+    
 
 
     .box {
@@ -173,6 +172,12 @@
 
     .sidebar {
         height: 15%;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .sidebar h1{
+        margin:5px;
     }
 
     .sidebar Button {
@@ -198,22 +203,24 @@
 
                 margin:0 auto;
             }
-            .sidebar{
-                height:15%;
-            }
-            .sidebar Button {
-                            margin: 10px;
-                            overflow: hidden;
-                            text-align: center;
-                            width: 90px;
-                            height: 30px;
-                            border-color: black;
-                            color: black;
+        .sidebar{
+                height:15vh;
+        }
+        .sidebar Button {
+                margin: 10px;
+                overflow: hidden;
+                text-align: center;
+                width: 90px;
+                height: 30px;
+                border-color: black;
+                color: black;
             
-                        }
+         }
+
 
 
 }
+
 
 
 

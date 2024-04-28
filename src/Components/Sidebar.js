@@ -7,7 +7,7 @@ import { Button } from '@mui/material'
 
 function Sidebar() {
 
-    const {isLoggedIn} =useContext(AppContext);
+  const {isLoggedIn} =useContext(AppContext);
   return (
     <div>
     

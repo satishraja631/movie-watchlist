@@ -40,7 +40,7 @@ const Login = () => {
     if (foundUser) {
       setLoggedInUser(foundUser)
       setIsLoggedIn(true)
-      setErrorMessage('Login successful!'); // Optional success message
+      setErrorMessage('Login successful!'); 
       
     } else {
       setErrorMessage('Please Signup if you are a new user.');
@@ -51,7 +51,7 @@ const Login = () => {
     setLoggedInUser(null);
     setIsLoggedIn(false)
     console.log(loggedInUser)
-    setErrorMessage(null); // Clear any previous error message
+    setErrorMessage(null); 
   };
 
   return (

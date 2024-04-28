@@ -27,25 +27,23 @@ const Signup = () => {
    const existingUser = users.find((user) => user === email);
    if (existingUser) {
     setErrorMessage('Email address already exists. Please proceed to Login');
-    return; // Prevent further processing
+    return; 
   }
    const newUser = email;
 
-  // Add the new user to the array
+  
    users.push(newUser);
 
-  // Convert updated users array to JSON string
+  
    const updatedUsersString = JSON.stringify(users);
 
-  // Store updated users array in localStorage
+  
     localStorage.setItem('users', updatedUsersString);
     setErrorMessage("User Signup Successful")
   
     
 
-    // localStorage.setItem('userMail', email);
-    // setEmail(''); // Clear input field after successful signup
-    // setErrorMessage('Signup successful!'); // Optional success message
+    
   };
 
   return (

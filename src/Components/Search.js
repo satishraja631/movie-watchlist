@@ -5,7 +5,10 @@ import { AppContext } from '../AppContext';
 import '../Styles/Search.css';
 
 
+
 const OMDB_API_KEY='d63b7f1'
+
+
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState('');
