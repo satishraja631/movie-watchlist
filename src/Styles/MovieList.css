@@ -1,6 +1,6 @@
 .movie-list-container{
         width: 70vw;
-        margin: 5%;
+        margin: 25px;
         padding: 10px;
         white-space: nowrap;
         
@@ -9,12 +9,17 @@
 .movie-list{
         display: flex;
         flex-direction:row;
-        padding: 0.5rem;
+        padding: 1rem;
         
         overflow-x:auto;
+        -ms-overflow-style: none;
+            /* IE and Edge */
+        scrollbar-width: none;
         
         
 }
+
+
 
 .movie-card {
 
@@ -22,14 +27,15 @@
     
     margin-bottom: 1rem;
    
-    width: 150px;
-    height: 300px;
+    width: 185px;
+    height: 400px;
     
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
    
     border-radius: 4px;
    
     position: relative;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 .movie-card>img {
@@ -69,6 +75,13 @@ p {
     word-wrap: break-word;
 }
 
+
+.watchlist-login-form{
+ 
+   
+    margin:200px  auto;
+    
+}
 @media screen and (max-width:700px){
     .movie-list-container {
             width: 70vw;

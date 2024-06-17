@@ -19,7 +19,7 @@ const AppProvider=({children})=>{
     
     const addToWatchlist=(movie)=>{
 
-        const existingMovies = watchlist[loggedInUser] || [];
+       const existingMovies = watchlist[loggedInUser] || [];
        const isDuplicate = existingMovies.some((existingMovie) => existingMovie.imdbID === movie.imdbID); // Check for duplicates
 
        if (!isDuplicate) {
@@ -68,7 +68,7 @@ const AppProvider=({children})=>{
  
   
 };
-  const value={searchedMovies,setSearchedMovies,loggedInUser,setLoggedInUser,isLoggedIn,setIsLoggedIn,addToWatchlist,removeFromWatchlist,watchlist,setWatchlist}
+const value={searchedMovies,setSearchedMovies,loggedInUser,setLoggedInUser,isLoggedIn,setIsLoggedIn,addToWatchlist,removeFromWatchlist,watchlist,setWatchlist}
 
 
     return (
@@ -77,6 +77,7 @@ const AppProvider=({children})=>{
         </AppContext.Provider>
     )
 }
+
 
 
 export default AppProvider;

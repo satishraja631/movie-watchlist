@@ -11,13 +11,20 @@ import { faBookmark} from '@fortawesome/free-solid-svg-icons';
 
 
 function MovieList() {
-    const {searchedMovies,addToWatchlist} = useContext(AppContext)
+    const {searchedMovies,addToWatchlist,isLoggedIn} = useContext(AppContext)
     const movies=searchedMovies;
 
     const watchlistString = localStorage.getItem('watchlist');
 
     const handleAddToPlaylist=(movie)=>{
       addToWatchlist(movie);
+      if(isLoggedIn){
+        alert('Movie added to watchlist')
+      }
+      else{
+        alert('Please login to add movies')
+      }
+      
     }
 
     

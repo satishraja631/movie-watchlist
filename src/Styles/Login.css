@@ -77,6 +77,33 @@
     font-family: "Poppins", sans-serif;
 }
 
+#logoutPopup {
+  position: fixed; /* Ensures the popup stays on top of other elements */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the popup */
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 10; /* Ensures the popup is displayed above other elements */
+}
+
+#logoutLink, #closeButton {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#logoutLink {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#closeButton {
+  background-color: #ddd;
+}
+
 @media screen and (max-width:1000px){
     .login-form {
             width: 400px;

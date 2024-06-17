@@ -20,11 +20,11 @@ function Sidebar() {
             
             
             
-            <Link to='/watchlist'><Button  variant="outlined">Watchlist</Button></Link>
+            <Link to='/watchlist'><Button  variant="contained">Watchlist</Button></Link>
             
            
-            {isLoggedIn?<Link to='/login'><Button  variant="outlined">Logout</Button></Link>:
-            <Link to='/login'><Button variant="outlined">Login</Button></Link>}
+            {isLoggedIn?<Link to='/login'><Button  variant="contained">Logout</Button></Link>:
+            <Link to='/login'><Button variant="contained">Login</Button></Link>}
             
                 
          

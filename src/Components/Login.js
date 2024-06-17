@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
 import '../Styles/Login.css'
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const {loggedInUser,setLoggedInUser,isLoggedIn,setIsLoggedIn} =useContext(AppContext);
@@ -10,6 +10,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
 
   const [errorMessage, setErrorMessage] = useState(null);
+  const navigate=useNavigate();
 
   
 
@@ -41,6 +42,8 @@ const Login = () => {
       setLoggedInUser(foundUser)
       setIsLoggedIn(true)
       setErrorMessage('Login successful!'); 
+      navigate('/watchlist')
+      
       
     } else {
       setErrorMessage('Please Signup if you are a new user.');

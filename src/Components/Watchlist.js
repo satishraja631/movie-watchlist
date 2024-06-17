@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react'
 import { useContext } from 'react'
 import { AppContext } from '../AppContext'
-import '../Styles/MovieList.css'
+import '../Styles/Watchlist.css'
 import Login from './Login';
 
 import '../Styles/Login.css'
@@ -32,13 +32,14 @@ function Watchlist() {
 
   const handleRemoveFromPlaylist=(movieId)=>{
     removeFromWatchlist(movieId);
+    alert('movie removed from watchlist');
   }
   return (
 
     
-    <div className='movie-list-container'>
+    <div className='watch-list-container'>
       {isLoggedIn && loggedInUser ? (
-      <ul className='movie-list'>
+      <ul className='watch-list'>
       
         
           

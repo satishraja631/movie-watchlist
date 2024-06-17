@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Signup.css'
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ const Signup = () => {
   const handleSignup = (event) => {
     event.preventDefault();
     
-     const existingUsersString = localStorage.getItem('users'); // Replace 'users' with your key
+     const existingUsersString = localStorage.getItem('users'); 
      let users = [];
      if (existingUsersString) {
        try {
@@ -22,7 +23,7 @@ const Signup = () => {
        } catch (error) {
         console.error('Error parsing users from localStorage:', error);
      }
-   }
+     }
 
    const existingUser = users.find((user) => user === email);
    if (existingUser) {
@@ -62,6 +63,9 @@ const Signup = () => {
         />
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <input type="submit" value="Submit" />
+        <Link to='/login'>
+            <p>Already Registered?Login</p>
+          </Link>
       </form>
     </div>
   );
