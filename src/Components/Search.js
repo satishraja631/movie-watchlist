@@ -6,7 +6,8 @@ import '../Styles/Search.css';
 
 
 
-const OMDB_API_KEY='d63b7f1'
+
+const OMDB_API_KEY='d63b7f1';
 
 
 

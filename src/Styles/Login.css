@@ -78,15 +78,15 @@
 }
 
 #logoutPopup {
-  position: fixed; /* Ensures the popup stays on top of other elements */
+  position: fixed; 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centers the popup */
+  transform: translate(-50%, -50%); 
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 10; /* Ensures the popup is displayed above other elements */
+  z-index: 10; 
 }
 
 #logoutLink, #closeButton {
